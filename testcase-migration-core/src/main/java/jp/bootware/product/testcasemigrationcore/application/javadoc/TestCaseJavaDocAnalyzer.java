@@ -1,4 +1,4 @@
-package jp.bootware.product.testcasemigrationcore.application;
+package jp.bootware.product.testcasemigrationcore.application.javadoc;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,7 +15,7 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
 @Service
-public class TestCodeJavaDocAnalyzer {
+public class TestCaseJavaDocAnalyzer {
 
   public Path parse(Path input, Path output) throws IOException {
 
@@ -25,7 +25,7 @@ public class TestCodeJavaDocAnalyzer {
       String json = parse(result.getResult().get());
       Files.deleteIfExists(output);
       Files.createDirectories(output.getParent());
-      Files.write(output, json.getBytes(), StandardOpenOption.CREATE_NEW);
+      return Files.write(output, json.getBytes(), StandardOpenOption.CREATE_NEW);
     }
 
     return null;

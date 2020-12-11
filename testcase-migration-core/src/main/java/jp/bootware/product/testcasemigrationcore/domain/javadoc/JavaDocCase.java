@@ -13,4 +13,8 @@ public class JavaDocCase extends Case {
 
   @JsonProperty("columns")
   private List<JavaDocAnnotation> annotations;
+
+  public JavaDocCase() {
+    JavaDocAnnotation.resetPriorityCount();
+  }
 }
