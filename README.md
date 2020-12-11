@@ -1,18 +1,5 @@
 # Test Case Migration
 
-## Annotation
-
-### Example
- 
- - Annotation:
-   - Arg1: Type
-   - Arg2: Type
-
-### Annotations
-
- - Case:
-   - columns: List<? extends CaseColumn>
-
 ## How to use
 
 1.Create test cases with Java.
