@@ -1,4 +1,4 @@
-package jp.bootware.product.testcasemigrationcore.domain.javadoc;
+package jp.bootware.product.testcasemigrationcore.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @NoArgsConstructor
-public class JavaDocAnnotation implements Comparable<JavaDocAnnotation> {
+public class UnitTestColumn implements Comparable<UnitTestColumn> {
 
   @JsonIgnore
   private static AtomicInteger priorityCount = new AtomicInteger(0);
@@ -34,7 +34,7 @@ public class JavaDocAnnotation implements Comparable<JavaDocAnnotation> {
   }
 
   @Override
-  public int compareTo(JavaDocAnnotation o) {
+  public int compareTo(UnitTestColumn o) {
     return this.priority - o.priority;
   }
 }

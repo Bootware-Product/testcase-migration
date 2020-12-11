@@ -1,6 +1,8 @@
 package jp.bootware.product.testcasemigrationcore.domain.javadoc;
 
-import jp.bootware.product.testcasemigrationcore.domain.CaseStore;
+import jp.bootware.product.testcasemigrationcore.domain.UnitTestCase;
+import jp.bootware.product.testcasemigrationcore.domain.UnitTestColumn;
+import jp.bootware.product.testcasemigrationcore.domain.UnitTestStore;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 
@@ -10,11 +12,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Getter
-public class JavaDocStore extends CaseStore<JavaDocCase> {
+public class JavaDocStoreUnit extends UnitTestStore {
 
   public void addCase(final String javadocContent) {
 
-    List<JavaDocAnnotation> annotations = new ArrayList<>();
+    List<UnitTestColumn> unitTestColumns = new ArrayList<>();
 
     String content = javadocContent;
     while (content.contains("@")) {
@@ -43,13 +45,13 @@ public class JavaDocStore extends CaseStore<JavaDocCase> {
           .map(String::trim)
           .collect(Collectors.joining(System.lineSeparator()));
 
-      JavaDocAnnotation annotation = new JavaDocAnnotation(name, text);
-      annotations.add(annotation);
+      UnitTestColumn unitTestColumn = new UnitTestColumn(name, text);
+      unitTestColumns.add(unitTestColumn);
     }
 
-    JavaDocCase javaDocCase = new JavaDocCase();
-    javaDocCase.setAnnotations(annotations);
+    UnitTestCase unitTestCase = new UnitTestCase();
+    unitTestCase.setColumns(unitTestColumns);
 
-    addCase(javaDocCase);
+    addCase(unitTestCase);
   }
 }

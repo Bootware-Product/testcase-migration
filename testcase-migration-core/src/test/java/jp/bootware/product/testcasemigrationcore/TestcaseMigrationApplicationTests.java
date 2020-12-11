@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class TestcaseMigrationApplicationTests {
-	
+
 	/**
 	 * @casename テストケース１
 	 * @target testCase1
@@ -28,6 +28,18 @@ class TestcaseMigrationApplicationTests {
 	 */
 	@Test
 	public void testCase2() {
+		// Your test code
+	}
+
+	/**
+	 * @casename テストケース３
+	 * @condition ・テーブルにレコードが存在する
+	 * ・入力データ正しくない
+	 * @prediction ・例外が発生し異常終了する
+	 * ・例外コード：０００２が出力される
+	 */
+	@Test
+	public void testCase3() {
 		// Your test code
 	}
 }

@@ -8,10 +8,10 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 @SpringBootTest
-class TestCaseJavaDocAnalyzerTest {
+class UnitTestMigratorTest {
 
   @Autowired
-  TestCaseJavaDocAnalyzer parser;
+  UnitTestMigrator migrator;
 
   Path input = Path.of("src/test/java/jp/bootware/product/testcasemigrationcore")
       .resolve("TestcaseMigrationApplicationTests.java")
@@ -22,6 +22,6 @@ class TestCaseJavaDocAnalyzerTest {
 
   @Test
   public void test() throws IOException {
-    parser.parse(input, output.resolve("test1.json"));
+    migrator.migrateCsv(input, output.resolve("test-case.csv"));
   }
 }

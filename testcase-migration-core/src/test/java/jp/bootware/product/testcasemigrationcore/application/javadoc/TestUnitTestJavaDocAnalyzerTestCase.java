@@ -8,13 +8,10 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 @SpringBootTest
-class TestCaseConverterTest {
+class TestUnitTestJavaDocAnalyzerTestCase {
 
   @Autowired
-  TestCaseJavaDocAnalyzer parser;
-
-  @Autowired
-  TestCaseConverter converter;
+  UnitTestJavaDocAnalyzer parser;
 
   Path input = Path.of("src/test/java/jp/bootware/product/testcasemigrationcore")
       .resolve("TestcaseMigrationApplicationTests.java")
@@ -25,7 +22,6 @@ class TestCaseConverterTest {
 
   @Test
   public void test() throws IOException {
-    Path jsonPath = parser.parse(input, output.resolve("testConverter.json"));
-    converter.json2csv(jsonPath, output.resolve("testConverter.csv"));
+    parser.parse(input, output.resolve("test1.json"));
   }
 }
