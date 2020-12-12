@@ -5,9 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseResult;
 import com.github.javaparser.ast.CompilationUnit;
-import jp.bootware.product.testcasemigrationcore.domain.UnitTestCase;
-import jp.bootware.product.testcasemigrationcore.domain.javadoc.JavaDocStoreUnit;
-import jp.bootware.product.testcasemigrationcore.domain.javadoc.JavaDocVisitor;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.UnitTestCase;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.javadoc.JavaDocStoreUnit;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.javadoc.JavaDocVisitor;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

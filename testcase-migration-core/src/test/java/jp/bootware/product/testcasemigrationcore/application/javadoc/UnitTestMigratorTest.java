@@ -1,5 +1,6 @@
 package jp.bootware.product.testcasemigrationcore.application.javadoc;
 
+import jp.bootware.product.testcasemigrationcore.application.UnitTestMigrator;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

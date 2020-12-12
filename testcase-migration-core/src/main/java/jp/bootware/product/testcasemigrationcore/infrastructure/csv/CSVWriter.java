@@ -12,6 +12,8 @@ public class CSVWriter {
 
   public Path write(CSVData data, Path output) throws IOException {
 
+    output.getParent().toFile().mkdirs();
+
     com.opencsv.CSVWriter writer = new com.opencsv.CSVWriter(new FileWriter(output.toFile()));
 
     Collection<String> header = data.getHeader().getValues();

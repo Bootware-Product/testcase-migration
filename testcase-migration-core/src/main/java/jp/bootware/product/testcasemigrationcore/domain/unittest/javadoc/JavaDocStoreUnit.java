@@ -1,8 +1,8 @@
-package jp.bootware.product.testcasemigrationcore.domain.javadoc;
+package jp.bootware.product.testcasemigrationcore.domain.unittest.javadoc;
 
-import jp.bootware.product.testcasemigrationcore.domain.UnitTestCase;
-import jp.bootware.product.testcasemigrationcore.domain.UnitTestColumn;
-import jp.bootware.product.testcasemigrationcore.domain.UnitTestStore;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.UnitTestCase;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.UnitTestColumn;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.UnitTestStore;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 

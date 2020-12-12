@@ -1,4 +1,4 @@
-package jp.bootware.product.testcasemigrationcore.domain;
+package jp.bootware.product.testcasemigrationcore.domain.unittest;
 
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,7 @@
-package jp.bootware.product.testcasemigrationcore.application.javadoc;
+package jp.bootware.product.testcasemigrationcore.application;
 
-import jp.bootware.product.testcasemigrationcore.domain.UnitTestCase;
+import jp.bootware.product.testcasemigrationcore.application.javadoc.UnitTestJavaDocAnalyzer;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.UnitTestCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

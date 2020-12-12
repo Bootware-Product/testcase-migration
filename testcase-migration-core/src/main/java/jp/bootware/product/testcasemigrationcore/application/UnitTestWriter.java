@@ -1,8 +1,8 @@
-package jp.bootware.product.testcasemigrationcore.application.javadoc;
+package jp.bootware.product.testcasemigrationcore.application;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jp.bootware.product.testcasemigrationcore.domain.UnitTestCase;
-import jp.bootware.product.testcasemigrationcore.domain.UnitTestStore;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.UnitTestCase;
+import jp.bootware.product.testcasemigrationcore.domain.unittest.UnitTestStore;
 import jp.bootware.product.testcasemigrationcore.infrastructure.csv.CSVData;
 import jp.bootware.product.testcasemigrationcore.infrastructure.csv.CSVWriter;
 import org.springframework.beans.factory.annotation.Autowired;
